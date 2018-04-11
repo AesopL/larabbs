@@ -13,10 +13,11 @@
                     </div>
                     <div class="media-body">
                         <h4><strong>个人简介</strong></h4>
-                        <p>这个人帅死了，还没简介</p>
+                    <p>{{ $user->introduction }}</p>
                         <hr>
                         <h4><strong>注册于</strong></h4>
-                        <p>january 01 2001</p>
+                        {{-- {{ dd($user->created_at) }} --}}
+                        <p>{{ $user->created_at->diffForHumans() }}</p>
                     </div>    
                 </div>   
             </div>
