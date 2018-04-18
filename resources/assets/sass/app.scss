@@ -7,7 +7,6 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
-
 body {
     font-family: Hiragino Sans GB,"Hiragino Sans GB",Helevetica,"Microsoft YaHei",Arial,san-serif;
 }
@@ -138,5 +137,23 @@ body{
     border: 1px solid #d3e0e9;
     border-radius: 4px;
 }
+
+/* Topic Show Page */
+
+@import "topic_body";
+
+.topics-show-page {
+
+    .panel {
+        padding: 15px;
+
+        h1 {
+            margin: 0.4em auto 0.6em;
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+}
+
 
 
