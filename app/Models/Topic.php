@@ -4,7 +4,7 @@ namespace App\Models;
 
 class Topic extends Model
 {
-    protected $fillable = ['title', 'body', 'user_id', 'catergory_id', 'reply_count', 'view_count', 'last_reply_user_id', 'excerpt', 'slug'];
+    protected $fillable = ['title', 'body', 'catergory_id', 'excerpt', 'slug'];
 
     //一篇文章属于一个分类
     public function category()

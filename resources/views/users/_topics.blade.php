@@ -17,4 +17,6 @@
 <div class="empty-block">暂无数据 ~_~ </div>
 @endif
 {{-- 分页 --}}
-{!! $topics->links() !!}
+<div class="text-center">
+	{!! $topics->links() !!}
+</div>
