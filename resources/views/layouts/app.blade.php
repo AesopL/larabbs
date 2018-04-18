@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title','larabbs')</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @yield('styles')
 
 <body>
     <div id="app" class="{{ route_class() }}-page">
@@ -19,6 +20,7 @@
         @include('layouts._footer')
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
 </body>
 
 </html>
