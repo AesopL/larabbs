@@ -19,6 +19,7 @@ class TopicsController extends Controller
 
     public function index(Request $request, Topic $topic)
     {
+        //dd($_SERVER["HTTP_USER_AGENT"]);
         $topics = $topic->withOrder($request->order)->paginate(30);
         return view('topics.index', compact('topics'));
     }
@@ -68,7 +69,7 @@ class TopicsController extends Controller
 
     public function uploadImage(Request $request, ImageUploadHandler $uploader)
     {
-        //dd($request->all());
+
         // 初始化返回数据，默认是失败的
         $data = [
             'success' => false,
