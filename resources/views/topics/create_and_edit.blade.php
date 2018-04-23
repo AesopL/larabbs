@@ -26,9 +26,9 @@
                         </div>
                         <div class="form-group">
                             <select class="form-control" name="category_id">
-                                <option value="" hidden disabled selected>请选择分类</option>
+                                <option value="" hidden disabled {{ $topic->id ? '' : 'selected' }}>请选择分类</option>
                                 @foreach($categories as $category)
-                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                <option value="{{ $category->id }}" {{ $topic->categroy_id == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -51,7 +51,7 @@
 @endsection
 
 @section('scripts')
-{{-- <script type="text/javascript" src="{{ asset('js/module.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/module.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/hotkeys.min.js') }}"></script>
 
 <script type="text/javascript" src="{{ asset('js/uploader.min.js') }}"></script>
@@ -72,5 +72,5 @@
             pasteImage:true,
         });
     });
-</script> --}}
+</script>
 @endsection
