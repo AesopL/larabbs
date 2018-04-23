@@ -37,24 +37,28 @@ html{
     min-height: 100%;
 }
 body{
-    margin-bottom: 100%;
+    margin-bottom: 60px;
 }
 
 .footer{
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100% ;
+    /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #000;
-    .container{
+
+    .container {
         padding-right: 15px;
         padding-left: 15px;
-        p{
+
+        p {
             margin: 19px 0;
             color: #c1c1c1;
-        }
-        a{
-            color: inherit;
+
+            a {
+                color: inherit;
+            }
         }
     }
 }

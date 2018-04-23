@@ -8383,13 +8383,14 @@ html {
 }
 
 body {
-  margin-bottom: 100%;
+  margin-bottom: 60px;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #000;
 }
@@ -8404,7 +8405,7 @@ body {
   color: #c1c1c1;
 }
 
-.footer .container a {
+.footer .container p a {
   color: inherit;
 }
 
